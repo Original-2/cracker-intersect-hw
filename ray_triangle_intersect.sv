@@ -197,7 +197,7 @@ module ray_triangle_intersect
                     div_den <= {32'd0, a[31] ? -a : a};
                     div_rem <= 64'd0;
                     div_quot <= 64'd0;
-                    div_count <= 7'd64;
+                    div_count <= 7'd50;
                     div_sign <= t_num[31] ^ a[31]; // Calculate expected sign
                     state <= S_DIV_STEP;
                 end
